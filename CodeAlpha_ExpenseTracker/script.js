@@ -15,7 +15,7 @@ function renderExpenses() {
     const row = document.createElement("tr");
     row.innerHTML = `
           <td>${expense.description}</td>
-          <td>$${expense.amount}</td>
+          <td>₹${expense.amount}</td>
           <td>${expense.date}</td>
           <td class="expense-item-actions">
               <i class="fas fa-edit" onclick="editExpense(${index})"></i>
@@ -27,7 +27,7 @@ function renderExpenses() {
     total += parseFloat(expense.amount);
   });
 
-  totalExpenses.textContent = `Total Expenses: $${total.toFixed(2)}`;
+  totalExpenses.textContent = `Total Expenses: ₹${total.toFixed(2)}`;
 }
 
 renderExpenses();

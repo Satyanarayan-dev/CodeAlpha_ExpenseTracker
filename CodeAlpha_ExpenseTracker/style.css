@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #efeac9;
+}
+
+.container {
+  max-width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #002540;
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="submit"] {
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  background-color: #0070f7;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}
+input[type="submit"]:hover {
+  background-color: #45ab4a;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #bac020;
+  color: indigo;
+}
+
+#total {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.expense-item-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expense-item-actions i {
+  cursor: pointer;
+}
+
+.expense-item-actions i:hover {
+  color: red;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+
+  table {
+    font-size: 14px;
+  }
+}
